@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+    
+}
+body{
+    background-color: #6aa3dc;
+background-image: linear-gradient(341deg, #6aa3dc 0%, #E0C3FC 33%, #ffffff 100%);
+
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 25px;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+.gamecontainer{
+    
+    background-color: rgba(228, 211, 239, 0.834);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+    
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(217, 151, 217);
+}
+ 
+.gameinfo{
+    padding-left: 30px;
+}
+
+.line{
+    width: 20vw;
+    height:3px;
+    background-color: black;
+    position: absolute;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.info{
+    font-size: 25px;
+}
+
+#reset{
+    width: 120px ;
+    height: 40px;
+    background-color: rgb(150, 44, 207);
+    color: white;
+    font: 1.4em sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 5px 2px black;
+    margin: 10px;
+    padding : 2px 10px;
+}
+
+@media screen and (max-width : 800px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 20px;
+    }
+    
+}
